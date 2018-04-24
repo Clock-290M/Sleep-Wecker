@@ -1,5 +1,4 @@
-//some demo code
-#include <ESP8266WiFi.h> //forlater
+#include <ESP8266WiFi.h>
 
 const int REEDPIN = D2;
 bool reeddetected = false;
@@ -12,6 +11,10 @@ int currminutes = 0;
 void setup() {
   Serial.begin(9600);
   pinMode(REEDPIN, INPUT_PULLUP);
+}
+
+void playNoise() {
+  
 }
 
 void loop() {
